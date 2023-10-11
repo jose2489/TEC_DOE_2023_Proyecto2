@@ -1,18 +1,41 @@
 #!/bin/bash
 
-# Path to the scene file
-SCENE_PATH="<Path/Scene.pbrt>"
+# Get system hostname
+HOSTNAME=$(hostname)
+
+# Array of scene paths
+SCENE_PATHS=(
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/buddha-fractal/buddha-fractal-bvh-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/buddha-fractal/buddha-fractal-bvh-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/buddha-fractal/buddha-fractal-kdtree-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/buddha-fractal/buddha-fractal-kdtree-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/dragon/dragon-bvh-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/dragon/dragon-bvh-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/dragon/dragon-kdtree-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/dragon/dragon-kdtree-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/pbrt-book/book-bvh-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/pbrt-book/book-bvh-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/pbrt-book/book-kdtree-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/pbrt-book/book-kdtree-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/veach-bidir/bidir-bvh-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/veach-bidir/bidir-bvh-maxmindist.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/veach-bidir/bidir-kdtree-halton.pbrt"
+  "/media/jupiterl/3044208E442058BC/Common Files/pbrt-v3-scenes/veach-bidir/bidir-kdtree-maxmindist.pbrt"
+)
+
+# Randomly shuffle the array
+shuf -e "${SCENE_PATHS[@]}"
 
 # Take user input for log file name
 read -p "Enter log file name (e.g., pbrt_logs.txt): " LOG_FILE
 
-# Number of times to execute the pbrt.exe command
-NUM_EXECUTIONS=5
+# Get current timestamp
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
-# Loop to execute the pbrt.exe command and capture output in the log file
-for ((i = 1; i <= NUM_EXECUTIONS; i++)); do
-    echo "Running pbrt.exe for scene $i" >> "$LOG_FILE"
+# Loop through each scene file and execute pbrt
+for SCENE_PATH in "${SCENE_PATHS[@]}"; do
+    echo "Running pbrt for scene $SCENE_PATH on $HOSTNAME at $TIMESTAMP" >> "$LOG_FILE"
     date >> "$LOG_FILE"
-    pbrt.exe "$SCENE_PATH" >> "$LOG_FILE"
+    ./pbrt "$SCENE_PATH" >> "$LOG_FILE"
     date >> "$LOG_FILE"
 done
