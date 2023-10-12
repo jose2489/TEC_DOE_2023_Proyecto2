@@ -1,6 +1,7 @@
-Film "image" "integer xresolution" [2560] "integer yresolution" [1440]
+Film "image" "integer xresolution" [1280] "integer yresolution" [720]
   "float cropwindow" [.3 .8 .15 .7] 
   "string filename" "head.exr"
+  "float scale" 4
   
 LookAt 0.322839 0.0534825 0.504299 -0.140808 -0.162727 -0.354936 0.0355799 0.964444 -0.261882
 
@@ -9,7 +10,7 @@ Camera "perspective" "float fov" [30.0]
 # The "path" integrator directly handles subsurface scattering
 Integrator "path" "integer maxdepth" [2]
 
-Sampler "halton" "integer pixelsamples" [2048]
+Sampler "maxmindist" "integer pixelsamples" [4096]
 
 WorldBegin
 AttributeBegin
@@ -29,6 +30,6 @@ Material "kdsubsurface" "texture Kd" "albedomap"
    "bool remaproughness" ["false"]
 
 Shape "plymesh" "string filename" "geometry/head.ply"
-    "bool discarddegenerateUVs" ["false"]
+      "bool discarddegenerateUVs" ["false"]
 
 WorldEnd
