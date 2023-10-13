@@ -11,7 +11,7 @@ Film "image"
 
 Sampler "sobol" "integer pixelsamples" 8192
 Integrator "mlt" "integer maxdepth" 20
-Accelerator "kdtree" "float emptybonus" [0.1]s
+Accelerator "kdtree" "float emptybonus" [0.1]
 
 #############################################
 WorldBegin
