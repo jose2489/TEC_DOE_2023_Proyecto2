@@ -1,1 +1,7 @@
 Here goes all results files .log to be processed
+
+Naming convention:
+
+OS_diskorVirtual_scenarioNumber_ExecutionNumber
+
+eg. windows_d_scenario1_02
