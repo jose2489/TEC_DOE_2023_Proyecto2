@@ -1,0 +1,257 @@
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 8GiB
+     *-cpu
+          product: AMD Ryzen 7 2700X Eight-Core Processor
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 1
+          bus info: cpu@0
+          version: 23.8.2
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp x86-64 constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr virt_ssbd arat
+          configuration: microcode=4294967295
+     *-scsi:0
+          description: SCSI storage controller
+          product: Virtio console
+          vendor: Red Hat, Inc.
+          physical id: 2
+          bus info: pci@1d0a:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:90-8f iomemory:90-8f iomemory:90-8f irq:0 memory:9ffe00000-9ffe00fff memory:9ffe01000-9ffe01fff memory:9ffe02000-9ffe02fff
+        *-virtio0 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@0
+             configuration: driver=virtio_console
+     *-scsi:1
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 3
+          bus info: pci@4f97:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:90-8f iomemory:90-8f iomemory:90-8f irq:0 memory:9ffe0c000-9ffe0cfff memory:9ffe0d000-9ffe0dfff memory:9ffe0e000-9ffe0efff
+        *-virtio4 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@4
+             configuration: driver=9pnet_virtio
+     *-generic
+          description: System peripheral
+          product: Virtio file system
+          vendor: Red Hat, Inc.
+          physical id: 4
+          bus info: pci@9338:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:e0-df iomemory:e0-df iomemory:c0-bf irq:0 memory:e00000000-e00000fff memory:e00001000-e00001fff memory:c00000000-dffffffff
+        *-virtio2 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@2
+             configuration: driver=virtiofs
+     *-scsi:2
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 5
+          bus info: pci@a2a8:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:b0-af iomemory:b0-af iomemory:b0-af irq:0 memory:bffe1c000-bffe1cfff memory:bffe1d000-bffe1dfff memory:bffe1e000-bffe1efff
+        *-virtio8 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@8
+             configuration: driver=9pnet_virtio
+     *-scsi:3
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 6
+          bus info: pci@a8b1:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:90-8f iomemory:90-8f iomemory:90-8f irq:0 memory:9ffe08000-9ffe08fff memory:9ffe09000-9ffe09fff memory:9ffe0a000-9ffe0afff
+        *-virtio3 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@3
+             configuration: driver=9pnet_virtio
+     *-scsi:4
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 7
+          bus info: pci@b7ea:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:b0-af iomemory:b0-af iomemory:b0-af irq:0 memory:bffe10000-bffe10fff memory:bffe11000-bffe11fff memory:bffe12000-bffe12fff
+        *-virtio5 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@5
+             configuration: driver=9pnet_virtio
+     *-scsi:5
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 8
+          bus info: pci@d6d2:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:90-8f iomemory:90-8f iomemory:90-8f irq:0 memory:9ffe04000-9ffe04fff memory:9ffe05000-9ffe05fff memory:9ffe06000-9ffe06fff
+        *-virtio1 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@1
+             configuration: driver=9pnet_virtio
+     *-scsi:6
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: 9
+          bus info: pci@d808:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:b0-af iomemory:b0-af iomemory:b0-af irq:0 memory:bffe14000-bffe14fff memory:bffe15000-bffe15fff memory:bffe16000-bffe16fff
+        *-virtio6 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@6
+             configuration: driver=9pnet_virtio
+     *-scsi:7
+          description: SCSI storage controller
+          product: Virtio filesystem
+          vendor: Red Hat, Inc.
+          physical id: a
+          bus info: pci@ecf3:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi msix bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:b0-af iomemory:b0-af iomemory:b0-af irq:0 memory:bffe18000-bffe18fff memory:bffe19000-bffe19fff memory:bffe1a000-bffe1afff
+        *-virtio7 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@7
+             configuration: driver=9pnet_virtio
+     *-display
+          description: 3D controller
+          product: Microsoft Corporation
+          vendor: Microsoft Corporation
+          physical id: b
+          bus info: pci@fc5d:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: bus_master cap_list
+          configuration: driver=dxgkrnl latency=0
+          resources: irq:0
+     *-pnp00:00
+          product: PnP device PNP0b00
+          physical id: c
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-scsi:8
+          physical id: d
+          logical name: scsi0
+        *-disk:0
+             description: SCSI Disk
+             product: Virtual Disk
+             vendor: Linux
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: 1.0
+             size: 363MiB
+             capabilities: extended_attributes large_files huge_files extents ext2 initialized
+             configuration: ansiversion=5 filesystem=ext2 logicalsectorsize=512 sectorsize=512 state=clean
+        *-disk:1
+             description: Linux swap volume
+             product: Virtual Disk
+             vendor: Msft
+             physical id: 0.0.1
+             bus info: scsi@0:0.0.1
+             logical name: /dev/sdb
+             version: 1
+             serial: e13a3dfa-f347-4320-97bb-f21f75e5d011
+             size: 2GiB
+             capacity: 2GiB
+             capabilities: swap initialized
+             configuration: ansiversion=5 filesystem=swap logicalsectorsize=512 pagesize=4096 sectorsize=4096
+        *-disk:2
+             description: EXT4 volume
+             product: Virtual Disk
+             vendor: Linux
+             physical id: 0.0.2
+             bus info: scsi@0:0.0.2
+             logical name: /dev/sdc
+             logical name: /
+             logical name: /mnt/wslg/distro
+             logical name: /snap
+             version: 1.0
+             serial: a7fdab7d-135f-401d-a1c1-1bc4258aa9c0
+             size: 1TiB
+             capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+             configuration: ansiversion=5 created=2023-10-11 04:32:40 filesystem=ext4 lastmountpoint=/distro logicalsectorsize=512 modified=2023-10-18 09:54:28 mount.fstype=ext4 mount.options=rw,relatime,discard,errors=remount-ro,data=ordered mounted=2023-10-18 09:54:28 sectorsize=4096 state=mounted
+  *-usbhost:0
+       product: USB/IP Virtual Host Controller
+       vendor: Linux 5.15.90.1-microsoft-standard-WSL2 vhci_hcd
+       physical id: 1
+       bus info: usb@1
+       logical name: usb1
+       version: 5.15
+       capabilities: usb-2.00
+       configuration: driver=hub slots=8 speed=480Mbit/s
+  *-usbhost:1
+       product: USB/IP Virtual Host Controller
+       vendor: Linux 5.15.90.1-microsoft-standard-WSL2 vhci_hcd
+       physical id: 2
+       bus info: usb@2
+       logical name: usb2
+       version: 5.15
+       capabilities: usb-3.00
+       configuration: driver=hub slots=8 speed=5000Mbit/s
+  *-network
+       description: Ethernet interface
+       physical id: 3
+       logical name: eth0
+       serial: 00:15:5d:cb:01:a6
+       size: 10Gbit/s
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=hv_netvsc driverversion=5.15.90.1-microsoft-standard-WS duplex=full firmware=N/A ip=172.21.186.200 link=yes multicast=yes speed=10Gbit/s
