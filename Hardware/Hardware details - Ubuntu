@@ -1,0 +1,103 @@
+H/W path                    Device     Class       Description
+==============================================================
+                                       system      MS-7B77 (To be filled by O.E.M.)
+/0                                     bus         X470 GAMING M7 AC (MS-7B77)
+/0/0                                   memory      64KiB BIOS
+/0/f                                   memory      16GiB System Memory
+/0/f/0                                 memory      2133 MHz (0,5 ns) [empty]
+/0/f/1                                 memory      2133 MHz (0,5 ns) [empty]
+/0/f/2                                 memory      2133 MHz (0,5 ns) [empty]
+/0/f/3                                 memory      16GiB DIMM DDR4 Synchronous Unbuffered (Unregistered) 2133 MHz (0,5 ns)
+/0/11                                  memory      768KiB L1 cache
+/0/12                                  memory      4MiB L2 cache
+/0/13                                  memory      16MiB L3 cache
+/0/14                                  processor   AMD Ryzen 7 2700X Eight-Core Processor
+/0/100                                 bridge      Family 17h (Models 00h-0fh) Root Complex
+/0/100/0.2                             generic     Family 17h (Models 00h-0fh) I/O Memory Management Unit
+/0/100/1.3                             bridge      Family 17h (Models 00h-0fh) PCIe GPP Bridge
+/0/100/1.3/0                           bus         Advanced Micro Devices, Inc. [AMD]
+/0/100/1.3/0/0              usb1       bus         xHCI Host Controller
+/0/100/1.3/0/0/5            scsi9      storage     Swivel
+/0/100/1.3/0/0/5/0.0.0      /dev/sdb   disk        15GB Swivel
+/0/100/1.3/0/0/5/0.0.0/0    /dev/sdb   disk        15GB 
+/0/100/1.3/0/0/5/0.0.0/0/1  /dev/sdb1  volume      14GiB Windows NTFS volume
+/0/100/1.3/0/0/a                       bus         USB 2.0 Hub
+/0/100/1.3/0/0/a/3                     input       USB OPTICAL MOUSE
+/0/100/1.3/0/0/a/4                     input       USB gaming Keyboard
+/0/100/1.3/0/1              usb2       bus         xHCI Host Controller
+/0/100/1.3/0.1              scsi3      storage     400 Series Chipset SATA Controller
+/0/100/1.3/0.1/0.0.0        /dev/sda   disk        1TB WDC WD10SPZX-60Z
+/0/100/1.3/0.1/0.0.0/1                 volume      99MiB Windows FAT volume
+/0/100/1.3/0.1/0.0.0/2      /dev/sda2  volume      15MiB reserved partition
+/0/100/1.3/0.1/0.0.0/3      /dev/sda3  volume      344GiB Windows NTFS volume
+/0/100/1.3/0.1/0.0.0/4      /dev/sda4  volume      292GiB Windows NTFS volume
+/0/100/1.3/0.1/0.0.0/5      /dev/sda5  volume      155GiB Windows NTFS volume
+/0/100/1.3/0.1/0.0.0/6      /dev/sda6  volume      521MiB Windows NTFS volume
+/0/100/1.3/0.1/0.0.0/7      /dev/sda7  volume      137GiB EXT4 volume
+/0/100/1.3/0.2                         bridge      400 Series Chipset PCIe Bridge
+/0/100/1.3/0.2/0                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/0/0          eno1       network     Killer E2500 Gigabit Ethernet Controller
+/0/100/1.3/0.2/1                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/2                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/3                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/3/0          wlp26s0    network     Wireless 8265 / 8275
+/0/100/1.3/0.2/4                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/8                       bridge      400 Series Chipset PCIe Port
+/0/100/1.3/0.2/8/0                     bus         ASM1142 USB 3.1 Host Controller
+/0/100/1.3/0.2/8/0/0        usb3       bus         xHCI Host Controller
+/0/100/1.3/0.2/8/0/1        usb4       bus         xHCI Host Controller
+/0/100/3.1                             bridge      Family 17h (Models 00h-0fh) PCIe GPP Bridge
+/0/100/3.1/0                           bridge      Vega 10 PCIe Bridge
+/0/100/3.1/0/0                         bridge      Vega 10 PCIe Bridge
+/0/100/3.1/0/0/0            /dev/fb0   display     Vega 10 XL/XT [Radeon RX Vega 56/64]
+/0/100/3.1/0/0/0.1          card0      multimedia  Vega 10 HDMI Audio [Radeon Vega 56/64]
+/0/100/3.1/0/0/0.1/0        input10    input       HDA ATI HDMI HDMI/DP,pcm=9
+/0/100/3.1/0/0/0.1/1        input11    input       HDA ATI HDMI HDMI/DP,pcm=10
+/0/100/3.1/0/0/0.1/2        input12    input       HDA ATI HDMI HDMI/DP,pcm=11
+/0/100/3.1/0/0/0.1/3        input7     input       HDA ATI HDMI HDMI/DP,pcm=3
+/0/100/3.1/0/0/0.1/4        input8     input       HDA ATI HDMI HDMI/DP,pcm=7
+/0/100/3.1/0/0/0.1/5        input9     input       HDA ATI HDMI HDMI/DP,pcm=8
+/0/100/7.1                             bridge      Family 17h (Models 00h-0fh) Internal PCIe GPP Bridge 0 to Bus B
+/0/100/7.1/0                           generic     Zeppelin/Raven/Raven2 PCIe Dummy Function
+/0/100/7.1/0.2                         generic     Family 17h (Models 00h-0fh) Platform Security Processor
+/0/100/7.1/0.3                         bus         Zeppelin USB 3.0 Host controller
+/0/100/7.1/0.3/0            usb5       bus         xHCI Host Controller
+/0/100/7.1/0.3/1            usb6       bus         xHCI Host Controller
+/0/100/8.1                             bridge      Family 17h (Models 00h-0fh) Internal PCIe GPP Bridge 0 to Bus B
+/0/100/8.1/0                           generic     Zeppelin/Renoir PCIe Dummy Function
+/0/100/8.1/0.2                         storage     FCH SATA Controller [AHCI mode]
+/0/100/8.1/0.3              card1      multimedia  Family 17h (Models 00h-0fh) HD Audio Controller
+/0/100/8.1/0.3/0            input13    input       HD-Audio Generic Front Mic
+/0/100/8.1/0.3/1            input14    input       HD-Audio Generic Rear Mic
+/0/100/8.1/0.3/2            input15    input       HD-Audio Generic Line
+/0/100/8.1/0.3/3            input16    input       HD-Audio Generic Line Out Front
+/0/100/8.1/0.3/4            input17    input       HD-Audio Generic Line Out Surround
+/0/100/8.1/0.3/5            input18    input       HD-Audio Generic Line Out CLFE
+/0/100/8.1/0.3/6            input19    input       HD-Audio Generic Front Headphone
+/0/100/14                              bus         FCH SMBus Controller
+/0/100/14.3                            bridge      FCH LPC Bridge
+/0/100/14.3/0                          system      PnP device PNP0c01
+/0/100/14.3/1                          system      PnP device PNP0b00
+/0/100/14.3/2                          system      PnP device PNP0c02
+/0/100/14.3/3                          system      PnP device PNP0c02
+/0/101                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/102                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/103                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/104                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/105                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/106                                 bridge      Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge
+/0/107                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 0
+/0/108                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 1
+/0/109                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 2
+/0/10a                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 3
+/0/10b                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 4
+/0/10c                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 5
+/0/10d                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 6
+/0/10e                                 bridge      Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 7
+/1                          input0     input       Power Button
+/2                          input1     input       Power Button
+/3                          input60    input       USB OPTICAL MOUSE
+/4                          input61    input       USB gaming Keyboard USB gaming Keyboard
+/5                          input62    input       USB gaming Keyboard USB gaming Keyboard Consumer Control
+/6                          input63    input       USB gaming Keyboard USB gaming Keyboard System Control
+/7                          input64    input       USB gaming Keyboard USB gaming Keyboard
