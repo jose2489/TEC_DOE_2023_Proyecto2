@@ -1,0 +1,9 @@
+Sistemas Operativos usados se dividen en dos categorías:
+	a. Disco Duro: estos son instalados directamente en el disco duro y se bootean así.
+			1. Windows: Windows10Upgrade9252 x64
+			2. Ubuntu: ubuntu-22.04.3-desktop-amd64
+
+	b. Virtuales: Corren en contenedores virtuales de alguno de los dos sistemas operativos instalados en disco:
+			3. WSL: ubuntu-22.04.3-desktop-amd64
+			4. Windows: Windows10Upgrade9252 x64
+			5. Debian: debian-12.2.0-amd64-netinst
