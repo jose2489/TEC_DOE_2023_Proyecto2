@@ -1,0 +1,44 @@
+import re
+
+def readfile(filename):
+    with open(filename, 'r') as file:
+        return file.read()
+
+def extract_information(content, filename):
+    hostname_pattern = r'Running pbrt for scene: .+ on ([\w-]+) \('
+    scene_pattern = r'Running pbrt for scene: (.+) which is \d+ out of \d+'
+    render_time_pattern = r'Rendering: .+ \((\d+\.\d+)s\)'
+    date_pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})'
+
+    hostname_matches = re.findall(hostname_pattern, content)
+    scene_matches = re.findall(scene_pattern, content)
+    render_time_matches = re.findall(render_time_pattern, content)
+    date_matches = re.findall(date_pattern, content)
+
+    extracted_info = []
+
+    for i in range(max(len(hostname_matches), len(scene_matches), len(render_time_matches), len(date_matches))):
+        hostname = hostname_matches[i] if i < len(hostname_matches) else 'N/A'
+        scene = scene_matches[i] if i < len(scene_matches) else 'N/A'
+        render_time = render_time_matches[i] if i < len(render_time_matches) else 'N/A'
+        date = date_matches[i] if i < len(date_matches) else 'N/A'
+        extracted_info.append((filename, hostname, scene, render_time, date))
+
+    return extracted_info
+
+
+def process_files(filenames):
+    print("Filename | Hostname | Scene | Render Time (s) | Date")
+    print("-" * 60)
+    for filename in filenames:
+        content = readfile(filename)
+        extracted_info = extract_information(content, filename)
+        for info in extracted_info:
+            print(f"{info[0]} | {info[1]} | {info[2]} | {info[3]} | {info[4]}")
+
+
+# Actual filenames
+filenames = ['/content/sample_data/debian_v_scenario1_05.log','/content/sample_data/ubuntu_d_scenario1_01.log', '/content/sample_data/windows_d_scenario1_02.txt', '/content/sample_data/windows_v_scenario1_04.log']
+
+# Para desplegar, se puede cambiar por guardar en archivo
+process_files(filenames)
