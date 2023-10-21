@@ -1,1 +1,10 @@
-First Scenario
+One common warning we get during rending is for the room scenes:
+C:\PBRT\pbrt-v3-scenes\simple\room-bvh-mlt.pbrt:20:0: Warning: Parameter "numiterations" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-bvh-mlt.pbrt:20:0: Warning: Parameter "radius" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-bvh-path.pbrt:20:0: Warning: Parameter "numiterations" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-bvh-path.pbrt:20:0: Warning: Parameter "radius" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-kdtree-mlt.pbrt:21:0: Warning: Parameter "numiterations" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-kdtree-mlt.pbrt:21:0: Warning: Parameter "radius" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-kdtree-path.pbrt:21:0: Warning: Parameter "numiterations" not used
+C:\PBRT\pbrt-v3-scenes\simple\room-kdtree-path.pbrt:21:0: Warning: Parameter "radius" not used
+
