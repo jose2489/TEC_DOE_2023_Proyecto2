@@ -1,0 +1,16 @@
+44.5;teapotmetal;bvh;mlt;Windows-Virtual
+320.6;teapotmetal;bvh;path;Windows-Virtual
+50.4;teapotmetal;kdtree;mlt;Windows-Virtual
+391.2;teapotmetal;kdtree;path;Windows-Virtual
+5.6;room;bvh;mlt;Windows-Virtual
+2.0;room;bvh;path;Windows-Virtual
+7.1;room;kdtree;mlt;Windows-Virtual
+2.8;room;kdtree;path;Windows-Virtual
+102.4;glass;bvh;mlt;Windows-Virtual
+8317.6;glass;bvh;path;Windows-Virtual
+148.3;glass;kdtree;mlt;Windows-Virtual
+11925.0;glass;kdtree;path;Windows-Virtual
+13.5;causticproj;bvh;mlt;Windows-Virtual
+3.4;causticproj;bvh;path;Windows-Virtual
+14.1;causticproj;kdtree;mlt;Windows-Virtual
+3.7;causticproj;kdtree;path;Windows-Virtual

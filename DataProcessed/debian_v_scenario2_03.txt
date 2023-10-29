@@ -1,0 +1,16 @@
+34.5;teapotmetal;bvh;mlt;Debian-Virtual
+247.6;teapotmetal;bvh;path;Debian-Virtual
+38.5;teapotmetal;kdtree;mlt;Debian-Virtual
+296.6;teapotmetal;kdtree;path;Debian-Virtual
+4.0;room;bvh;mlt;Debian-Virtual
+1.5;room;bvh;path;Debian-Virtual
+5.0;room;kdtree;mlt;Debian-Virtual
+2.0;room;kdtree;path;Debian-Virtual
+76.5;glass;bvh;mlt;Debian-Virtual
+6458.3;glass;bvh;path;Debian-Virtual
+111.5;glass;kdtree;mlt;Debian-Virtual
+8878.5;glass;kdtree;path;Debian-Virtual
+9.5;causticproj;bvh;mlt;Debian-Virtual
+2.0;causticproj;bvh;path;Debian-Virtual
+10.0;causticproj;kdtree;mlt;Debian-Virtual
+2.3;causticproj;kdtree;path;Debian-Virtual

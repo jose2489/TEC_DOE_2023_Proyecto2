@@ -1,0 +1,16 @@
+24.5;teapotmetal;bvh;mlt;Linux-Virtual
+162.5;teapotmetal;bvh;path;Linux-Virtual
+25.5;teapotmetal;kdtree;mlt;Linux-Virtual
+192.5;teapotmetal;kdtree;path;Linux-Virtual
+3.5;room;bvh;mlt;Linux-Virtual
+1.2;room;bvh;path;Linux-Virtual
+4.0;room;kdtree;mlt;Linux-Virtual
+1.5;room;kdtree;path;Linux-Virtual
+54.5;glass;bvh;mlt;Linux-Virtual
+4402.8;glass;bvh;path;Linux-Virtual
+75.5;glass;kdtree;mlt;Linux-Virtual
+6007.8;glass;kdtree;path;Linux-Virtual
+6.5;causticproj;bvh;mlt;Linux-Virtual
+1.5;causticproj;bvh;path;Linux-Virtual
+7.5;causticproj;kdtree;mlt;Linux-Virtual
+1.5;causticproj;kdtree;path;Linux-Virtual
